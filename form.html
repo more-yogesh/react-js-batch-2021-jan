@@ -4,36 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Element</title>
+    <style>
+        input {
+            border: 1px solid rgb(163, 163, 163);
+            height: 40px;
+            width: 400px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            height: 50px;
+            width: 430px;
+            background-color: #1877f2;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .loginContainer {
+            background-color: white;
+            width: 30%;
+            float: right;
+            margin-top: 10%;
+            margin-right: 10%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 21px -10px black;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .fp-link {
+            text-align: center;
+            margin-top: 15px;
+
+        }
+
+        .fp-link a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #1877f2;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
-<body>
+<body bgcolor="#f0f2f5">
 
-    <form action="">
-        <table border="0">
-            <tr>
-                <td><label for="txtName">Name</label></td>
-                <td><input type="text" name="name" id="txtName" placeholder="Enter name"></td>
-            </tr>
-            <tr>
-                <td><label for="txtPassword">Password</label></td>
-                <td><input type="password" name="password" placeholder="Enter Password" id="txtPassword"></td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td><label for="rdMale">Male</label>
-                    <input type="radio" name="gender" value="male" id="rdMale">
-                    <label for="rdFemale">Female</label>
-                    <input type="radio" name="gender" id="rdFemale" value="female">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" name="btnAdd" value="INSERT">
-                </td>
-            </tr>
-        </table>
-    </form>
+    <div class="loginContainer">
+        <form>
+            <table border="0" align="center">
+                <tr>
+                    <td><input type="text" name="name" id="txtName" placeholder="Enter Email or Phone number"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" placeholder="Password" id="txtPassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" name="btnAdd">Log In</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="fp-link">
+                <a href="#">Forgotten password?</a>
+                <hr />
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
