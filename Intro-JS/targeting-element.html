@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="fname" id="fnameId" placeholder="Add Number">
+    <input type="text" name="lname" id="lnameId">
+    <p>I am first</p>
+    <p></p>
+    <script>
+        document.getElementById("fnameId").value = "123";
+        document.getElementsByTagName("input")[0].value = "testing";
+        // document.getElementsByTagName("p")[0].innerHTML = "hello";
+        document.getElementsByTagName("p")[1].innerHTML = "I am second P";
+    </script>
+</body>
+
+</html>

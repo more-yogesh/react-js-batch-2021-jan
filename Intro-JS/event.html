@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <!-- INLINE JAVASCRIPT -->
+    <input type="text" class="" name="" id="" onfocus="alert('I am focused')" onkeydown="alert('I am down')"
+        onblur="alert('I am blur')" onkeyup="alert('I am up')" onkeypress="alert('I am pressed')">
+
+    <input type="button" onclick="greet()" value="Click Me">
+
+    <script>
+        function greet() {
+            console.log('Good Morning');
+            document.writeln('Good Morning');
+        }
+        // greet();
+    </script>
+</body>
+
+</html>
