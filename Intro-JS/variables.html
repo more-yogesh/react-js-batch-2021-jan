@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <input type="number" name="" id="x">
+    <input type="number" name="" id="y">
+    <input type="button" value="ADD" id="btnAdd" onclick="sum()">
+    <h1 id="answer"></h1>
+
+    <hr>
+
+    <input type="text" name="name" id="name">
+    <select name="options" id="gender" onchange="showHeading(this)">
+        <option value="">Select Gender</option>
+        <option value="male">MALE</option>
+        <option value="female">FEMALE</option>
+    </select>
+    <h1 id="myMessage">
+
+    </h1>
+</head>
+
+<body>
+
+    <script>
+        // convert string to intiger parseInt();
+
+        // Types of variable in JS
+        /*
+
+        assume name of variable 'a';
+        What is diffrence between bellow variables?
+        1)a
+        2)var a
+        3)let a
+        4)const a
+
+        */
+        function sum() {
+            x = document.getElementById('x').value;
+            y = document.getElementById('y').value;
+            z = parseInt(x) + parseInt(y);
+            // document.getElementById('answer').textContent = '<u>'+z+'</u>';
+            // document.getElementById('answer').innerHTML = '<u>'+z+'</u>';
+        }
+
+
+        // x = 20;
+        // x = x + 10;
+        // x = ?
+
+
+        function showHeading(e) {
+            // console.log(e.name);
+            // console.log(e.value);
+
+            selectedGender = e.value;
+            message = "";
+            name = document.getElementById('name').value;
+            if (selectedGender == 'male') {
+                // true message
+                message = "Hello Mr. " + name;
+            }
+            else {
+                // false message 
+                message = "Hi Miss, " + name
+            }
+            document.getElementById('myMessage').textContent = message;
+        }
+
+
+    </script>
+</body>
+
+</html>
